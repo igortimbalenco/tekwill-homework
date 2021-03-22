@@ -1,3 +1,5 @@
+package com.itimbalenco.homework.home19032021;
+
 import java.util.Scanner;
 
 public class FarenheitCelcius {
