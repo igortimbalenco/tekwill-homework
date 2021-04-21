@@ -11,6 +11,9 @@ import java.util.TreeMap;
 public class Esp {
     public static void main(String[] args) {
         Map<Integer, String> integerStringMap = new TreeMap<>();
+
+        populateMap(integerStringMap);
+
         Random random = new Random();
         String color = "";
         int counter = 0;
@@ -21,7 +24,7 @@ public class Esp {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            if (color.toLowerCase().equals(integerStringMap.get(1 + random.nextInt(10))))
+            if (color.toLowerCase().equals(integerStringMap.get(random.nextInt(5))))
                 counter++;
         }
         System.out.println("User successfully guessed the color " + counter + " times");
@@ -29,11 +32,11 @@ public class Esp {
     }
 
     public static void populateMap (Map<Integer, String> integerStringMap){
-        integerStringMap.put(1, "red");
-        integerStringMap.put(2, "green");
-        integerStringMap.put(3, "blue");
-        integerStringMap.put(4, "orange");
-        integerStringMap.put(5, "yellow");
+        integerStringMap.put(0, "red");
+        integerStringMap.put(1, "green");
+        integerStringMap.put(2, "blue");
+        integerStringMap.put(3, "orange");
+        integerStringMap.put(4, "yellow");
     }
 
     public  static String getUsersData() throws IOException {
