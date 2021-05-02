@@ -30,7 +30,7 @@ public class Game {
         int value = scanner.nextInt();
         String str = "";
         while (!(value >= 1 && value <= 3)){
-            System.out.println("Oh human being... Please enter the value from 1 to 3");
+            System.out.println("Oh.. human being... Please enter the value from 1 to 3");
             value = scanner.nextInt();
         }
         return map.get(value);
