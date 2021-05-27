@@ -36,7 +36,6 @@ public class ArraysIntersection {
         for (int i = 0; i < array1.size(); i++) {
             if (array2.contains(array1.get(i)))
                 list3.add(array1.get(i));
-        }
-        return list3;
+        }        return list3;
     }
 }
